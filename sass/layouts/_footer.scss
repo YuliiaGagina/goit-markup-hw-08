@@ -1,0 +1,243 @@
+
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--footer-background);
+
+    // @include mq(mobile-only){
+    //      width: 100%;
+    // }
+   
+
+}
+.footer-content{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    
+    align-items: baseline;
+    @include mq( desktop){
+        gap: 70px;
+        text-align: left;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+   
+}
+.footer-left{
+    @include mq(tablet){
+        margin-right: 105px;
+    }
+    @include mq(desktop){
+        margin-right: 0;
+    }
+}
+
+
+.footer-sutittle{
+    margin-bottom: 20px;
+
+    color: var(--white-color);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.logo.lower{
+    padding: 0;
+    
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--white-color);
+
+}
+.adress-list .item + .item{
+    margin-top: 9px;
+}
+
+.link.address{
+    
+    color: var(--white-color);
+    
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link.address:hover,
+.link.address:focus{
+    color: var(--main-color-hover);
+}
+
+.link.mail,
+.link.tel{
+    
+    color: var(--footer-links-color);
+  
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link.mail:hover,
+.link.mail:focus,
+.link.tel:hover,
+.link.tel:focus{
+    color: var(--main-color-hover);
+}
+
+/* --------footer-icons------------------- */
+.footer .list-icons {
+    display: flex;
+}
+
+.list-icons .item{
+    width: 44px;
+    height: 44px;
+    
+}
+.list-icons .item + .item{
+    margin-left: 10px;
+     
+}
+
+
+.list-icons .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+    color: var(--white-color);
+   background-color: rgba(255, 255, 255, 0.1);
+
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+.footer-icon{
+    fill: currentColor
+}
+.list-icons .link:hover,
+.list-icons .link:focus{
+    background-color: var(--main-color-hover);
+   
+
+}
+/* footer-subscribe  */
+.subscribe-label{
+ 
+
+    @include mq(mobile-only){
+        text-align: center;
+    }
+    @include mq(desktop){
+        margin-left: auto;
+    }
+    
+}
+.subscribe-group{
+    display: block;
+    
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+
+    @include mq (mobile-only){
+        margin-bottom: 20px;
+    }
+}
+.subscripe-wrapper{
+   
+    @include mq(tablet){
+       gap: 20px;
+     
+    }
+
+    @include mq(desktop){
+        display: flex;
+        gap: 12px;
+    }
+
+}
+.input-subscribe{
+    display: inline-block;
+    height: 50px;
+    width: 290px;
+    margin-bottom: 20px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--main-color-text);
+    
+
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+
+    @include mq(mobile){
+        width: 450px;
+        margin-bottom: 20px;
+        
+    }
+    @include mq(desktop){
+        width: 358px;
+        margin-bottom: 0;
+    }
+       
+
+}
+.subscribe-button{
+    display: flex;
+   
+    align-items: center;
+    gap: 10px;
+    padding: 10px 28px;
+    border-radius: 4px;
+    background-color: var(--main-color-hover);
+    cursor: pointer;
+    border:1px solid transparent;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+ 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      @include mq(mobile-only){
+      margin: 0 auto;
+    }
+    @include mq(tablet){
+       margin: 0 auto;
+
+    }
+
+    @include mq(desktop){
+         display: inline-flex;
+      
+    }
+
+}
+.subscribe-button:hover{
+    background-color: var(--main-butter-hover);
+}
+.subscribe-button-wrap{
+    display: inline-block;
+    position: relative;
+}
+.subscribe-svg{
+    width: 24px;
+    height: 24px;
+ }

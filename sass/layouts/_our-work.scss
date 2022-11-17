@@ -1,0 +1,49 @@
+.work{
+
+    display: none;
+
+    @include mq (desktop){
+        display: block;
+    }
+
+    padding-bottom: 94px;
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        &-content{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(47, 48, 58, 0.8);
+        }
+        &-subtittle{
+            font-size: 14px;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--white-color);
+            padding: 27px 94px;
+        }
+    }
+    &__list .item{
+        position: relative;
+    
+
+        width: calc((100% - 60px) /3);
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    &__list .item:nth-child(3n){
+        margin-right: 0;
+    }
+    &__list .item:nth-last-child(-n +3){
+    margin-bottom: 0;
+    }
+    
+}
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+
+.benefits{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include mq(desktop){
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+    }
+   
+    &__tittle{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+      
+        &-iconwrapper{
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+            
+
+            background-color: var(--team-background) ;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+        &-subtittle{
+            margin-top: 0;
+            margin-bottom: 10px;
+
+            color: var(--main-color-tittle);
+            font-size: 14px;
+            text-transform: uppercase;
+
+              @include mq (mobile-only){
+                text-align: center;
+              }
+        }
+
+        &-text{
+            color: inherit;
+            line-height: 1.71;
+        }
+        &-item{
+            width: 450px;
+
+            @include mq (tablet){
+                width: 354px;
+              }
+
+             @include mq (desktop){
+                width: 270px;
+              }
+        }
+        
+        
+    }
+    
+   
+   
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
