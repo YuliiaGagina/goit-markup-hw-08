@@ -14,19 +14,22 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
         <link rel="stylesheet" href="./css/main.min.css">
 
-         <link rel="stylesheet"
+         <!-- <link rel="stylesheet"
              href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
              integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-             crossorigin="anonymous" />
+             crossorigin="anonymous" /> -->
 
 
 </head>
 
-<body>
+<body >
     <header class="header ">
-        <div class="header__container container">
+        <div class="header__container container ">
         <nav class="header__site-nav" >
             <a class="header__logo logo" lang="en" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
+
+             
+              
             <ul class="header__navigation navigation list">
                 <li class="navigation__item item" ><a class="navigation__link active" href="">Студія</a></li>
                 <li class="navigation__item item"><a class="navigation__link"
@@ -34,16 +37,56 @@
                 <li class="navigation__item item"><a class="navigation__link"
                     href="">Контакти</a></li>
             </ul>
-        </nav>
 
-         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-             <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                 <path fill-rule="evenodd"
-                     d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                     clip-rule="evenodd"></path>
+            
+        </nav>
+         <button type="button" class="menu-open" data-menu-open>
+             <svg width="40" height="40">
+                 <use href="./images/icons.svg#icon-menu"></use>
              </svg>
          </button>
-         
+       
+         <div class="mob-menu " data-menu>
+             <div class="container">
+                 <button type="button" class="menu-close" data-menu-close>
+                     <svg class="menu-close__svg" width="40" height="40">
+                         <use href="./images/icons.svg#menu-close"></use>
+                     </svg>
+                 </button>
+
+                  <ul class="mob-menu__navigation  list">
+                      <li class="mob-menu__item item"><a class="mob-menu__link link active" href="">Студія</a></li>
+                      <li class="mob-menu__item item"><a class="mob-menu__link link"
+                              href="./portfolio.html">Портфоліо</a></li>
+                      <li class="mob-menu__item item"><a class="mob-menu__link link" href="">Контакти</a></li>
+                  </ul>
+
+
+                  <div class="mob-menu__lower">
+                   <ul class="mob-contact  list">
+                         <li class=" mob-contact__item item">
+                             <a class="mob-contact__link active link" href="tel:+380961111111">+38 096 111 11 11</a>
+                         </li>
+
+                       <li class="mob-contact__item item"><a class="mob-contact__link link"
+                               href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                      </ul>
+
+                   <ul class="mob-sosial list">
+                    <li  class="mob-sosial__item item"><a class="mob-sosial__link link" href="">Instagram</a></li>
+                     <li class="mob-sosial__item item"><a class="mob-sosial__link link" href="">Twitter</a></li>
+                      <li class="mob-sosial__item item"><a class="mob-sosial__link link" href="">Facebook</a></li>
+                       <li class="mob-sosial__item item"><a class="mob-sosial__link link" href="">LinkedIn</a></li>
+                   </ul>
+                   </div>
+
+             </div>
+         </div>
+        
+           
+
+      
         <ul class="header__contact contact list">
            <li class="contact__item item"><a class="contact__link link" href="mailto:info@devstudio.com">
             <svg class="contact__icon" width="16" height="12">
@@ -59,42 +102,20 @@
             </li>
            
         </ul>
+
         </div>
-
-
-
-         
-
-
-           <div class="menu-container js-menu-container" id="mobile-menu">
-               <button class="menu-toggle js-close-menu">
-                   <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24"
-                       height="24">
-                       <path fill-rule="evenodd"
-                           d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                           clip-rule="evenodd"></path>
-                   </svg>
-               </button>
-
-               <!-- <ul class="mobile-menu">
-                   <li><a href="" class="link">About</a></li>
-                   <li><a href="" class="link">Products</a></li>
-                   <li><a href="" class="link">Contacts</a></li>
-                   <li><a href="" class="link">Career</a></li>
-               </ul> -->
-           </div>
-    </header>
-    <main>
-        <!-- Hero -->
-        <section class="hero">
+ </header>
+     <main>
+         <!-- Hero  -->
+        <!-- <section class="hero">
             <div class="hero__container container">
             <h1 class="hero__tittle">Ефективні рішення для вашого бізнесу</h1>
             <button class="hero__button" data-modal-open type="button">Замовити послугу</button>
             </div>
-        </section>
+        </section> -->
         <!-- benefits -->
 
-        <section class="section benefits">
+        <!-- <section class="section benefits">
             <div class="container benfits__container">
             <h2 class="benefits__tittle tittle visually-hidden" >Наші переваги</h2>
             <ul class="benefits__list  list">
@@ -136,10 +157,10 @@
                 </li>
             </ul>
             </div>
-        </section> 
+        </section>  -->
         <!-- our work -->
 
-         <section class="section work">
+         <!-- <section class="section work">
             <div class="container work__container">
             <h2 class="work__tittle tittle">Чим ми займаємося</h2>
             <ul class="list work__list">
@@ -163,13 +184,13 @@
                 </li>
             </ul>
             </div>
-        </section> 
+        </section>  -->
 
 
          <!-- Our team -->
 
 
-        <section class="section team">
+        <!-- <section class="section team">
             <div class="container team__container">
             <h2 class="team__tittle tittle">Наша команда</h2>
             <ul class="list team__list ">
@@ -331,11 +352,11 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section> -->
 
 
         <!-- clients -->
-        <section class="clients section">
+        <!-- <section class="clients section">
             <div class="container">
                 <h2 class="tittle clients-tittle">Постійні клієнти</h2>
                 <ul class="clients-list list">
@@ -383,9 +404,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
-    </main>
-   <footer class="footer">
+        </section> -->
+    </main> 
+   <!-- <footer class="footer">
         <div class="container footer-content">
             <div class="footer-left">
         <a class="logo lower" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
@@ -445,7 +466,7 @@
             </form>
 
         </div>
-    </footer> 
+    </footer>  -->
 
     <div class="backdrop is-hidden " data-modal>
         <div class="modal">
@@ -517,12 +538,15 @@
     
 
     
-
+<!-- 
        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
            crossorigin="anonymous"></script>
-            <script defer src="js/mobile-menu.js"></script>
+            <script defer src="js/mobile-menu.js"></script> -->
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+ 
 </body>
 
 </html>

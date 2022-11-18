@@ -18,6 +18,10 @@
     gap: 60px;
     
     align-items: baseline;
+    @include mq(tablet){
+        justify-content: space-around;
+    }
+
     @include mq( desktop){
         gap: 70px;
         text-align: left;
@@ -27,14 +31,14 @@
 
    
 }
-.footer-left{
-    @include mq(tablet){
-        margin-right: 105px;
-    }
-    @include mq(desktop){
-        margin-right: 0;
-    }
-}
+// .footer-left{
+//     @include mq(tablet){
+//         margin-right: 105px;
+//     }
+//     @include mq(desktop){
+//         margin-right: 0;
+//     }
+// }
 
 
 .footer-sutittle{
@@ -133,7 +137,11 @@
 }
 /* footer-subscribe  */
 .subscribe-label{
- 
+    
+    @media screen and (max-width: 480px) {
+        width: 100%;
+        
+    }
 
     @include mq(mobile-only){
         text-align: center;
@@ -171,7 +179,8 @@
 .input-subscribe{
     display: inline-block;
     height: 50px;
-    width: 290px;
+    width: 100%;
+    max-width: 450px;
     margin-bottom: 20px;
     padding-left: 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
