@@ -14,15 +14,10 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
         <link rel="stylesheet" href="./css/main.min.css">
 
-         <!-- <link rel="stylesheet"
-             href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-             integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-             crossorigin="anonymous" /> -->
-
 
 </head>
 
-<body >
+<body class="no-scroll" >
     <header class="header ">
         <div class="header__container container ">
         <nav class="header__site-nav" >
@@ -160,7 +155,7 @@
         </section>  -->
         <!-- our work -->
 
-         <!-- <section class="section work">
+         <section class="section work">
             <div class="container work__container">
             <h2 class="work__tittle tittle">Чим ми займаємося</h2>
             <ul class="list work__list">
@@ -184,18 +179,28 @@
                 </li>
             </ul>
             </div>
-        </section>  -->
+        </section> 
 
 
          <!-- Our team -->
 
 
-        <!-- <section class="section team">
+        <section class="section team">
             <div class="container team__container">
             <h2 class="team__tittle tittle">Наша команда</h2>
             <ul class="list team__list ">
                 <li class="team__list-item item">
-                    <img class="team__list-card" src="./images/card-1.jpg" width="270" alt="Product Designer">
+                    <img class="team__list-card"  srcset="
+    .././images/card1-sm-1x-min.jpg 450w,
+    .././images/card1-sm-2x-min.jpg 900w,
+    .././images/card1-m-1x-min.jpg 354w,
+    ././images/card1-m-2x-min.jpg 708w,
+    ././images/card1-l-1x-min.jpg 270w,
+    ././images/card1-l-2x-min.jpg 540w
+  " src="././images/card1-sm-1x-min.jpg"
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                        width="450" height="460" alt="Product Designer" />
+                    <!-- <img class="team__list-card" src="./images/card-1.jpg" width="270" alt="Product Designer"> -->
                     <div class="team__list-content">
                     <h3 class="team__list-subtittle">Ігор Дем'яненко</h3>
                     <p class="team__list-text" lang="en">Product Designer</p>
@@ -352,11 +357,11 @@
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
 
 
         <!-- clients -->
-        <!-- <section class="clients section">
+        <section class="clients section">
             <div class="container">
                 <h2 class="tittle clients-tittle">Постійні клієнти</h2>
                 <ul class="clients-list list">
@@ -404,9 +409,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main> 
-   <!-- <footer class="footer">
+   <footer class="footer">
         <div class="container footer-content">
             <div class="footer-left">
         <a class="logo lower" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
@@ -466,9 +471,9 @@
             </form>
 
         </div>
-    </footer>  -->
+    </footer> 
 
-    <div class="backdrop is-hidden " data-modal>
+    <div class="backdrop is-hidden  " data-modal>
         <div class="modal">
             <button data-modal-close class="button-close">
                 <svg class="close-button" width="11" height="11">

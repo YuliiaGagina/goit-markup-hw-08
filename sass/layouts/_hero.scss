@@ -8,14 +8,26 @@
     margin: 0 auto;
 
     background-color: var(--footer-background);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
+    background-image: var(--linear-gradient), url(../../images/bg-sm-1x.jpg);
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: var(--linear-gradient), url(../../images/bg-sm-2x.jpg);
+  }
     @include mq(mobile){
+        background-image: var(--linear-gradient), url(../../images/bg-m-1x.jpg);
+         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+       background-image: var(--linear-gradient), url(../../images/bg-m-2x.jpg);
+   }
 
     }
     @include mq(tablet){
+          background-image: var(--linear-gradient), url(../../images/bg-l-1x.jpg);
+                @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+       background-image: var(--linear-gradient), url(../../images/bg-l-2x.jpg);
+   }
 
     }
     @include mq(desktop){
